@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Major+Mono+Display"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-size: 16px;
+
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #666;
+      }
+
+      .pimg1,
+      .pimg2,
+      .pimg3 {
+        position: relative;
+        opacity: 0.7;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        /*
+    fixed = parallax
+    scroll = normal
+  */
+        background-attachment: fixed;
+      }
+
+      .pimg1 {
+        background-image: url("https://images.unsplash.com/photo-1544701258-11d754130948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+        min-height: 100%;
+      }
+
+      .pimg2 {
+        background-image: url("https://images.unsplash.com/photo-1495229159533-c7fcb0f1f014?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+        min-height: 400px;
+      }
+
+      .pimg3 {
+        background-image: url("https://images.unsplash.com/photo-1460687521562-9eead9abe9e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+        min-height: 400px;
+      }
+
+      .section {
+        text-align: center;
+        padding: 50px 80px;
+      }
+
+      .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+      }
+
+      .section-dark {
+        background-color: #282e34;
+        color: #ddd;
+      }
+
+      h2 {
+        font-family: "Major Mono display", sans-serif;
+      }
+
+      .bio {
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .gigs {
+        list-style: none;
+      }
+
+      #email {
+        color: #ffffff;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .ptext {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+      }
+
+      .ptext .border {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+        font-family: "Major Mono Display", sans-serif;
+      }
+
+      .ptext .border.trans {
+        background-color: transparent;
+      }
+
+      .icon-bar {
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+      }
+
+      .icon-bar a:hover {
+        background-color: #000;
+      }
+
+      .facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .instagram {
+        background: #da3f70;
+        color: white;
+      }
+
+      .twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .spotify {
+        background: #45bb00;
+        color: white;
+      }
+
+      .soundcloud {
+        background: #eb5d39;
+        color: white;
+      }
+
+      .youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .content {
+        margin-left: 75px;
+        font-size: 30px;
+      }
+
+      @media (max-width: 568px) {
+        .pimg1,
+        .pimg2,
+        .pimg3 {
+          background-attachment: scroll;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="icon-bar">
+      <a
+        href="https://www.facebook.com/LLIAMofficial/"
+        class="facebook"
+        target="_blank"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/lliamofficial/"
+        class="instagram"
+        target="_blank"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <!----<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
+      <a
+        href="https://open.spotify.com/artist/5pP2T0sqaUlffrKbNg9jWp"
+        class="spotify"
+        target="_blank"
+        ><i class="fa fa-spotify"></i
+      ></a>
+      <a
+        href="https://soundcloud.com/liamworldwide"
+        class="soundcloud"
+        target="_blank"
+        ><i class="fa fa-soundcloud"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UC-V7lpdJDkyY1ACBLvLd2Ag"
+        class="youtube"
+        target="_blank"
+        ><i class="fa fa-youtube"></i
+      ></a>
+    </div>
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border">
+          lliam
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>Bio</h2>
+      <p class="bio">
+        After spending years as a professional bassist, Will Martin has released
+        music under the moniker Lliam. His debut Ep "Heart Moves" was released
+        in July 2018, just days after getting off the road playing major tours
+        across the nation. Lliam has several more releases set for early 2019,
+        along with live shows in his hometown of Nashville, Tennessee, and
+        beyond. Stay tuned.
+      </p>
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">
+          Upcoming Shows
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <!-- <h2>gigs</h2>--->
+
+      <ul class="gigs">
+        <li>July 5, 2019 - The End</li>
+        <li>August 20, 2019 - Tootsies</li>
+        <li>December 2, 2019 - RocketTown</li>
+      </ul>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans"> </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>contact</h2>
+      <p>
+        <a
+          id="email"
+          href="mailto:lliam@lliamofficial.com?Subject=Hello%20again"
+          target="_top"
+          >lliam@lliamofficial.com</a
+        >
+      </p>
+    </section>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border">
+          <a class="dc">District c.</a>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
