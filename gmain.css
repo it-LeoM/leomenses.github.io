@@ -1,9 +1,10 @@
 .body {
+ background: rgb(228, 222, 205) !important;
   background: linear-gradient(
     90deg,
     rgba(228, 222, 205, 1) 22%,
     rgba(200, 184, 144, 1) 100%
-  );
+  ) !important;
 }
 .grid-container {
   display: grid;
