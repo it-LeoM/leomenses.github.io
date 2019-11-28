@@ -1,0 +1,61 @@
+.body {
+  background: linear-gradient(
+    90deg,
+    rgba(228, 222, 205, 1) 22%,
+    rgba(200, 184, 144, 1) 100%
+  );
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". header header ." ". div1 div2 ." ". div3 div4 ." ". div5 div6 ." ". footer footer .";
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  padding: 100px;
+}
+
+.div1 {
+  grid-area: div1;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.div2 {
+  grid-area: div2;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.div3 {
+  grid-area: div3;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.div4 {
+  grid-area: div4;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.div5 {
+  grid-area: div5;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.div6 {
+  grid-area: div6;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 50px;
+}
